@@ -56,6 +56,16 @@ functions:
           path: screenshot
           method: get
 
+  html:
+    description: Headless Chrome Serverless-framework HTML example
+    memorySize: 1536
+    timeout: 30
+    handler: src/handlers/html.default
+    events:
+      - http:
+          path: html
+          method: get
+
   pdf:
     description: Headless Chrome Serverless-framework PDF example
     memorySize: 1536
